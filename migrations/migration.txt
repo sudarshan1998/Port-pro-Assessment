@@ -1,3 +1,4 @@
+// migration queries for SQLite
 CREATE TABLE IF NOT EXISTS users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,
@@ -6,6 +7,7 @@ CREATE TABLE IF NOT EXISTS users (
   updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
+// migration queries for PostgreSQL:
 CREATE TABLE IF NOT EXISTS users (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255) NOT NULL,

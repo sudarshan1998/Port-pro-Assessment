@@ -16,10 +16,10 @@ const mongoConnectionPromise = MongoClient.connect('mongodb://localhost:27017', 
 
 // PostgreSQL connection
 const pgConnectionPool = new Pool({
-  user: 'your_username',
+  user: 'sudarshan',
   host: 'localhost',
-  database: 'your_database',
-  password: 'your_password',
+  database: 'users',
+  password: 'root',
   port: 5432,
 });
 

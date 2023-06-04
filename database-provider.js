@@ -3,6 +3,8 @@ const User = require('./models/User');
 
 class DatabaseProvider {
   constructor(databaseType) {
+    this.databaseType = databaseType;
+    
     switch (databaseType) {
       case 'sqlite':
         this.connection = sqliteConnection;
@@ -24,7 +26,7 @@ class DatabaseProvider {
         return User(this.connection).findAll();
       case 'mongodb':
         const connection = await this.connectionPromise;
-        const db = connection.db('your_database');
+        const db = connection.db('users');
         return db.collection('users').find().toArray();
       case 'postgresql':
         const client = await this.connectionPool.connect();
