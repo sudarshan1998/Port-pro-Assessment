@@ -9,6 +9,10 @@ We solved the problem using the ```Dependency Injection Design Pattern```.
 
  We used Node.js environment.
 
+ ## Express
+
+ Express was used a framework.
+
  ## Sequelize
 
  We used sequelize ORM for data mapping.
@@ -36,6 +40,20 @@ Make sure that MongoDB and PostgreSQL are installed and configured properly.
 After the packages has been installed, go to the root directory and enter the command ```node seed-data.js```. It will seed the data into the respective databases.
 
 Now, go to the root directory and enter the command ```node index.js```. It will run our app in 5000 port.
+
+# APIs
+
+1. Endpoint: ```http://localhost:5000/api/v1/users```
+
+This API with ```v1``` will get the data from SQLite database.
+
+2. Endpoint: ```http://localhost:5000/api/v2/users```
+
+This API with ```v2``` will get the data from MongoDB database.
+
+3. Endpoint: ```http://localhost:5000/api/v3/users```
+
+This API with ```v3``` will get the data from PostgreSQL
 
 # Glimpes of the Assessment
 
