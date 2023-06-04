@@ -31,6 +31,8 @@ To install, go the root directory and enter the command ```npm install```.
 
 Make sure that MongoDB and PostgreSQL are installed and configured properly.
 
+# Run the project
+
 After the packages has been installed, go to the root directory and enter the command ```node seed-data.js```. It will seed the data into the respective databases.
 
 Now, go to the root directory and enter the command ```node index.js```. It will run our app in 5000 port.
