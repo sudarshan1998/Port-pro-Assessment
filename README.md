@@ -9,6 +9,10 @@ We solved the problem using the ```Dependency Injection Design Pattern```.
 
  We used Node.js environment.
 
+ ## Express
+
+ Express was used a framework.
+
  ## Sequelize
 
  We used sequelize ORM for data mapping.
