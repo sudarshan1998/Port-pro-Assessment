@@ -41,17 +41,17 @@ After the packages has been installed, go to the root directory and enter the co
 
 Now, go to the root directory and enter the command ```node index.js```. It will run our app in 5000 port.
 
-# API
+# APIs
 
-Endpoint: ```http://localhost:5000/api/v1/users```
+1. Endpoint: ```http://localhost:5000/api/v1/users```
 
 This API with ```v1``` will get the data from SQLite database.
 
-Endpoint: ```http://localhost:5000/api/v2/users```
+2. Endpoint: ```http://localhost:5000/api/v2/users```
 
 This API with ```v2``` will get the data from MongoDB database.
 
-Endpoint: ```http://localhost:5000/api/v3/users```
+3. Endpoint: ```http://localhost:5000/api/v3/users```
 
 This API with ```v3``` will get the data from PostgreSQL
 
