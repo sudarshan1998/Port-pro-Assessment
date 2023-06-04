@@ -6,9 +6,9 @@ async function seedSQLite() {
   try {
     await User(sqliteConnection).sync({ force: true });
     await User(sqliteConnection).bulkCreate([
-      { name: 'User 1', profilePic: 'pic1.jpg' },
-      { name: 'User 2', profilePic: 'pic2.jpg' },
-      { name: 'User 3', profilePic: 'pic3.jpg' },
+      { name: 'SQLITE User 1', profilePic: 'pic1.jpg' },
+      { name: 'SQLITE User 2', profilePic: 'pic2.jpg' },
+      { name: 'SQLITE User 3', profilePic: 'pic3.jpg' },
     ]);
     console.log('SQLite data seeded successfully');
   } catch (error) {
@@ -23,9 +23,9 @@ async function seedMongoDB() {
     const db = mongoConnection.db('users');
     await db.collection('users').deleteMany({});
     await db.collection('users').insertMany([
-      { name: 'User 1', profilePic: 'pic1.jpg' },
-      { name: 'User 2', profilePic: 'pic2.jpg' },
-      { name: 'User 3', profilePic: 'pic3.jpg' },
+      { name: 'MONGO User 1', profilePic: 'pic1.jpg' },
+      { name: 'MONGO User 2', profilePic: 'pic2.jpg' },
+      { name: 'MONGO User 3', profilePic: 'pic3.jpg' },
     ]);
     console.log('MongoDB data seeded successfully');
   } catch (error) {
@@ -40,9 +40,9 @@ async function seedPostgreSQL() {
     await client.query('DELETE FROM users');
     await client.query(
       `INSERT INTO users (name, profilePic) VALUES
-      ('User 1', 'pic1.jpg'),
-      ('User 2', 'pic2.jpg'),
-      ('User 3', 'pic3.jpg')`
+      ('PG User 1', 'pic1.jpg'),
+      ('PG User 2', 'pic2.jpg'),
+      ('PG User 3', 'pic3.jpg')`
     );
     client.release();
     console.log('PostgreSQL data seeded successfully');
