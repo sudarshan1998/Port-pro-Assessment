@@ -11,7 +11,7 @@ We solved the problem using the Dependency Injection Design Pattern.
 
  ## Sequelize
 
- We used sequelize (ORM)[https://sequelize.org/] for data mapping.
+ We used sequelize ORM for data mapping.
 
  ## SQLite
 
