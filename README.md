@@ -41,6 +41,20 @@ After the packages has been installed, go to the root directory and enter the co
 
 Now, go to the root directory and enter the command ```node index.js```. It will run our app in 5000 port.
 
+# API
+
+Endpoint: ```http://localhost:5000/api/v1/users```
+
+This API with ```v1``` will get the data from SQLite database.
+
+Endpoint: ```http://localhost:5000/api/v2/users```
+
+This API with ```v2``` will get the data from MongoDB database.
+
+Endpoint: ```http://localhost:5000/api/v3/users```
+
+This API with ```v3``` will get the data from PostgreSQL
+
 # Glimpes of the Assessment
 
 ![Screenshot from 2023-06-04 16-40-40](https://github.com/sudarshan1998/Port-pro-Assessment/assets/23524244/0554c572-0059-4cc9-9ac0-d2c6a90f1551)
